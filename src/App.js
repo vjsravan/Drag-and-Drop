@@ -1,25 +1,57 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import { parse } from "papaparse";
 import './App.css';
+import _  from 'lodash';
 
-function App() {
+import Drag from "./draganddrop";
+
+class App extends Component {
+  state = {
+    sales: [],
+    countrys: []
+  }
+  
+  render() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>EVALUATION EXERCISE </h1> <br/>
+      <h2>Drag & Drop</h2>
+      <div
+
+        onDragOver={(e) => {
+          e.preventDefault();
+        }}
+
+        onDrop={(e) => {
+          e.preventDefault();
+
+          Array.from(e.dataTransfer.files).filter((file) => file.type === "application/vnd.ms-excel")
+          .forEach(async (file) => {
+            const text = await file.text();
+            const result = parse(text);
+            result.data.shift();
+            // remove header row and extract the data into state
+          this.setState({
+              sales: [...result.data]
+          } ,()=>{
+              // get unique list of countries from data
+              const countryList = this.state.sales.map(row => {return {name: row[1]};});
+              this.setState({ countrys :_.uniqBy(countryList, 'name')});
+            });
+          });
+        }}
+      >
+      <p>DROP HERE</p>
+      <div>
+        {
+          this.state.countrys.length > 0 &&
+          <Drag countrys={this.state.countrys} sales={(this.state.sales)}></Drag>
+        }
+      </div>
+      </div>
     </div>
   );
+    }
 }
 
 export default App;

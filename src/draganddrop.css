@@ -1,0 +1,59 @@
+.countrys{
+    color: #00FA9A;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 4;
+}
+
+country-table {
+    flex: 1;
+}
+
+.country-table:first-child {
+    margin-right: -10px;
+}
+
+.country-input {
+    color: aliceblue;
+    margin-left: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+input {
+    margin-left: 5px;
+}
+
+.product-table {
+    margin-left: 10px;
+    margin-right: -10px;
+}
+
+.product-input {
+    color: aliceblue;
+    margin-left: 25px;
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+textarea {
+    margin-left: 5px;
+}
+
+.output {
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+
+
+
