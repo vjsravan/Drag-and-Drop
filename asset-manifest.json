@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Drag-and-Drop/static/css/main.63b7b8f1.chunk.css",
-    "main.js": "/Drag-and-Drop/static/js/main.5032a0ef.chunk.js",
-    "main.js.map": "/Drag-and-Drop/static/js/main.5032a0ef.chunk.js.map",
+    "main.css": "/Drag-and-Drop/static/css/main.dab4654d.chunk.css",
+    "main.js": "/Drag-and-Drop/static/js/main.60b9fa47.chunk.js",
+    "main.js.map": "/Drag-and-Drop/static/js/main.60b9fa47.chunk.js.map",
     "runtime-main.js": "/Drag-and-Drop/static/js/runtime-main.766e5973.js",
     "runtime-main.js.map": "/Drag-and-Drop/static/js/runtime-main.766e5973.js.map",
     "static/css/2.3d5167d2.chunk.css": "/Drag-and-Drop/static/css/2.3d5167d2.chunk.css",
@@ -12,14 +12,14 @@
     "static/js/3.426e541c.chunk.js.map": "/Drag-and-Drop/static/js/3.426e541c.chunk.js.map",
     "index.html": "/Drag-and-Drop/index.html",
     "static/css/2.3d5167d2.chunk.css.map": "/Drag-and-Drop/static/css/2.3d5167d2.chunk.css.map",
-    "static/css/main.63b7b8f1.chunk.css.map": "/Drag-and-Drop/static/css/main.63b7b8f1.chunk.css.map",
+    "static/css/main.dab4654d.chunk.css.map": "/Drag-and-Drop/static/css/main.dab4654d.chunk.css.map",
     "static/js/2.5588ac70.chunk.js.LICENSE.txt": "/Drag-and-Drop/static/js/2.5588ac70.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.766e5973.js",
     "static/css/2.3d5167d2.chunk.css",
     "static/js/2.5588ac70.chunk.js",
-    "static/css/main.63b7b8f1.chunk.css",
-    "static/js/main.5032a0ef.chunk.js"
+    "static/css/main.dab4654d.chunk.css",
+    "static/js/main.60b9fa47.chunk.js"
   ]
 }
