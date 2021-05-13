@@ -107,7 +107,6 @@ class Drag extends Component {
             return tileContainer;
         },
         onDragStop:  (event) => {
-            console.log("this props"+this.props);
             this.setState({
                 selectedProducts: event.nodes.map(node => node.data.product)
             }, () => {
