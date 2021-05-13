@@ -30,7 +30,6 @@ class App extends Component {
             const text = await file.text();
             const result = parse(text);
             result.data.shift();
-            console.log(result);
             // remove header row and extract the data into state
           this.setState({
               sales: [...result.data]
