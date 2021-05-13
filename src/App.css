@@ -15,20 +15,6 @@ h2 {
   margin-top: -61px;
 }
 
-/* .drop {
-  background-image: linear-gradient( 110.7deg,  rgba(9,154,151,1) 6.3%, rgba(21,205,168,1) 90.6% );
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  margin-top: -100px;
-  margin-left: -250px;
-  width: 500px;
-  height: 200px;
-  border: 4px dashed rgb(7, 7, 7);
-  cursor: pointer;
-  padding: 25px;
-} */
-
 p {
   background-image: linear-gradient( 110.7deg,  rgba(9,154,151,1) 6.3%, rgba(21,205,168,1) 90.6% );
   top: 30%;

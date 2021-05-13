@@ -26,7 +26,6 @@ class App extends Component {
           e.preventDefault();
 
           Array.from(e.dataTransfer.files)
-          // .filter((file) => file.type === "application/vnd.ms-excel","text/csv")
           .forEach(async (file) => {
             const text = await file.text();
             const result = parse(text);
