@@ -182,7 +182,7 @@ class Drag extends Component {
 
                             <div className="product-input">
                             Please select a list of products by selecting and dragging from the list:
-                            <textarea id="product-selection" rows="10" columns="50" value={_.isEmpty(this.state.selectedProducts)? "":this.state.selectedProducts.join(",")}/>
+                            <textarea id="product-selection" rows="10" columns="50" value={_.isEmpty(this.state.selectedProducts)? "":this.state.selectedProducts.join("\n")}/>
                             </div>
                             
                         </>
@@ -190,17 +190,20 @@ class Drag extends Component {
                 }
                 </div>
                 <br/>
-                <div className="output">OUTPUT :</div>
+                
                 {
                     this.state.selectedProducts.length > 0 && 
                     (
-                    <div style={{ width: '100%', height: '500px' }} className="ag-theme-alpine">
-                        <AgGridReact
-                        columnDefs={this.salesColumnDefs}
-                        defaultColDef={this.state.defaultColDef}
-                        rowData={this.state.salesListToDisplay}
-                        />
-                    </div>
+                        <>
+                        <div className="output">OUTPUT :</div>
+                        <div style={{ width: '100%', height: '500px' }} className="ag-theme-alpine">
+                            <AgGridReact
+                            columnDefs={this.salesColumnDefs}
+                            defaultColDef={this.state.defaultColDef}
+                            rowData={this.state.salesListToDisplay}
+                            />
+                        </div>
+                    </>
                     )
                 }
                 <br />
